@@ -18,7 +18,14 @@
 	"forwardPorts": [8000],
 
 	// Uncomment the next line to run commands after the container is created.
-	"postCreateCommand": "./requirements/install_requirements.sh"
+	"postCreateCommand": "./requirements/install_requirements.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},
