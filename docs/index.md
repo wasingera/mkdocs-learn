@@ -1,8 +1,15 @@
 # Welcome to MkDocs
 
 View the site live on [GitHub](https://wasingera.github.io/mkdocs-learn/)!
-!!! info
-    It's updated automatically every time you push!
+!!! info annotate
+    It's updated automatically every time you push! (1)
+    !!! info
+        Hello From Devcontainer!
+
+1. Isn't that cool! (1)
+{ .annotate }
+
+    1. This is cooler!
 
 Here we document how to do `Hello World!` in different languages
 
@@ -49,9 +56,12 @@ Here we document how to do `Hello World!` in different languages
         char* string = malloc(sizeof(char) * strlen("Hello World!"))
         strcpy(string, "Hello World!");
         printf("%s\n", string);
-        return 0 // We never free the string!
+        return 0; // (1)
     }
     ```
+    { .annotate }
+
+    1. We never free the string! :astonished: :material-arrow-right: `free(string)`
 
 ## High-Level
 === "Python"
