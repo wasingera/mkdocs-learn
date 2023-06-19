@@ -1,5 +1,9 @@
 # Welcome to MkDocs
 
+View the site live on [GitHub](https://wasingera.github.io/mkdocs-learn/)!
+!!! info
+    It's updated automatically every time you push!
+
 Here we document how to do `Hello World!` in different languages
 
 ## Lower-Level
@@ -9,10 +13,13 @@ Here we document how to do `Hello World!` in different languages
     #include <stdio.h>
 
     int main() {
-        printf("Hello World!");
+        printf("Hello World!"); // (1)
         return 0;
     }
     ```
+    { .annotate }
+
+    1. This is **memory safe** :smile:!
 
 === "C++"
     ```cpp
