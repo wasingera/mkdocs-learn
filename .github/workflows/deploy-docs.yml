@@ -21,6 +21,6 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material pyyaml
+      - run: pip install git+https://${{secrets.MKDOCS_KEY}}@github.com/wwt/mkdocs-material-insiders.git pyyaml
       - run: ./generate_docs.py
       - run: mkdocs gh-deploy --force
